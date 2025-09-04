@@ -1,0 +1,5 @@
+work/
+test.nf
+coding-test-nextflow/
+.nextflow*
+*.DS_Store
