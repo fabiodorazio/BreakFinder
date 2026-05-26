@@ -1,5 +1,8 @@
+# BreakFinder
+
 This workflow is designed to identify samples treated with AsiSI enzyme form the Double Strand Break (DSB) signature derived from INDUCE-Seq.
 The enzyme localised in the nucleus after treatment with 4OHT and triggers DSB at restriction sites. Not all restriction sites are affected due to chromatin accessibility of the region.
+
 INDUCE-Seq detects every DSB in the genome with no bias, including the enzyme-induced DSBs at AsiSI target sites.
 The frequency across one regions represents the propensity of that region to DSB in a certain cell type/condition. This can be quantified against the signal background 
 
