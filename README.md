@@ -16,25 +16,26 @@ The frequency across one regions represents the propensity of that region to DSB
 - MERGE BREAKENDS
 
 ### Bed format
-`chr    start   end     ID    MAPQ     strand`
-Strand is irrelevant in DSB
+`chr    start   end     ID    MAPQ     strand*`
+
+*Strand is irrelevant in DSB
 
 Using `bedtools merge` to merge reads that are overlapping or adjacent.  Counts updated
 
 ```param = merge_dist``` : default = 0
 
-- INTERSECT
+- INTERSECT:
 Using `bedtools intersect` to count the overlaps between DSB in each sample and the reference AsiSI coordinates.
 This indicates how many DSB occur at the expected restriction sites and will be used as proxy to assess treatment.
 It also returns the non-overlapping coordinates
 
-- COUNTS
+- COUNTS:
 Various metrics are calculated per sample: DSB rate per Asisi, DSB rate overall.
 
-- COLLATE_METRICS
+- COLLATE_METRICS:
 Stats and metrics collated for all samples 
 
-- VISUALS
+- VISUALS:
 Visual functions are added but not used since matplotlib is not installed in Docker. It would require installation
 
 
